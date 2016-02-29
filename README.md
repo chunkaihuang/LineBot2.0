@@ -21,5 +21,16 @@ Team Member Linker
 >	Step4: Unzip "CKH_finalP.zip" and put the folder "CKH_finalP" at the localhost folder of XAMPP.  EX: C:\xampp\xampp\htdocs\CKH_finalP
 
 >	Step5: Open the website in browser.  EX: http://localhost/CKH_finalP/index.php
+>
+>
+>        User Manual
+>
+>
+![github](https://github.com/chunkaihuang/TeamMemberLinker/blob/master/ReadMePic/01.png "00")
+>
+>
+
+
+
 
 
