@@ -3,6 +3,7 @@ Team Member Linker
 >
 >        DB Connection Information
 >
+
 > Database name: web_final_db
 
 > Username = root
@@ -12,6 +13,7 @@ Team Member Linker
 >
 >        Install Information
 >
+
 >	Step1: In MySQL administrator, create a new database, name "web_final_db".
 
 >	Step2: Import data with "web_final_db.sql".
