@@ -29,9 +29,6 @@ post '/callback' do
           text: "回應: #{say_message}"
         }
         response = client.reply_message(event['replyToken'], message)
-        case say_message
-        when /蛙人/
-          response = client.reply_message(event['replyToken'], "我不是蛙人")
       when Line::Bot::Event::MessageType::Image, Line::Bot::Event::MessageType::Video
         response = client.get_message_content(event.message['id'])
         tf = Tempfile.open("content")
