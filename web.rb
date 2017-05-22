@@ -23,7 +23,10 @@ post '/callback' do
     when Line::Bot::Event::Message
       case event.type
       when Line::Bot::Event::MessageType::Text
-        message = "你好我是黃肯尼"
+        message = {
+          type: 'text',
+          text: "你好我是黃肯尼"
+        }
         client.reply_message(event['replyToken'], message)
       end
     end
