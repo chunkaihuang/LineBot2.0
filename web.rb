@@ -20,6 +20,7 @@ def det_key_word(rec_word)
       "誰叫誰蛙人"
     else  
       "你好我是黃肯尼"
+    end  
   end  
 end  
 
