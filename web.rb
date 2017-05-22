@@ -8,7 +8,7 @@ def client
   }
 end
 
-post '/callback' do
+def reply_msg
   body = request.body.read
 
   signature = request.env['HTTP_X_LINE_SIGNATURE']
@@ -31,5 +31,9 @@ post '/callback' do
       end
     end
   }
-
 end
+
+post '/callback' do
+  reply_msg
+end
+
