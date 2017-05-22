@@ -8,6 +8,17 @@ def client
   }
 end
 
+def det_key_word(rec_word)
+  case rec_word
+  when "蛙人"
+    "我不是蛙人"
+  when "大餅"
+    "我也不是大餅啦"
+  else
+    "你好我是黃肯尼"
+  end  
+end  
+
 def reply_msg
   body = request.body.read
 
@@ -25,7 +36,7 @@ def reply_msg
       when Line::Bot::Event::MessageType::Text
         message = {
           type: 'text',
-          text: "你好我是黃肯尼"
+          text: det_key_word(event.message['text'])
         }
         client.reply_message(event['replyToken'], message)
       end
