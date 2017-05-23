@@ -11,6 +11,8 @@ end
 def det_key_word(rec_word)
   
   case rec_word
+  when "尼尼"
+    "老婆~"
   when "蛙人"
     "我不是蛙人"
   when "大餅"
@@ -18,6 +20,10 @@ def det_key_word(rec_word)
   else
     if rec_word.include?('蛙人')
       "誰叫誰蛙人"
+    if rec_word.include?('是不是')  
+      "你是呀"
+    if rec_word.include?('會不會')
+      "你變給我看呀"
     else  
       "你好我是黃肯尼"
     end  
