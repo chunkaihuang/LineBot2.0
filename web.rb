@@ -24,6 +24,12 @@ def det_key_word(rec_word)
       "你是呀"
     if rec_word.include?('會不會')
       "你變給我看呀"
+    if rec_word.include?('像你')
+      "像帥吧叭"   
+    if rec_word.include?('臭')
+      "你綴臭"   
+    if rec_word.include?('小只')
+      "你小只的"     
     else  
       "你好我是黃肯尼"
     end  
