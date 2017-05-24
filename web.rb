@@ -41,7 +41,7 @@ def det_key_word(rec_word)
     elsif rec_word.include?('小只')
       "你小只的"     
     else  
-      ""
+      "呱"
     end  
   end  
 end  
