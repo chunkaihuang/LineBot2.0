@@ -40,7 +40,7 @@ def det_key_word(rec_word)
       "你綴臭"   
     elsif rec_word.include?('小只')
       "你小只的"  
-    elsif rec_word.include?('炸雞')
+    elsif rec_word.include?('炸雞'||'炸鸡')
       "黃肯尼想吃拿坡里炸雞 呱~"   
     else  
       "呱"
