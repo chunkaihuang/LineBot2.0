@@ -24,6 +24,10 @@ def det_key_word(rec_word)
   else
     if rec_word.include?('蛙人')
       "誰叫誰蛙人"
+    elsif rec_word.include?('愛')
+      "愛我家老婆"   
+    elsif rec_word.include?('爱')
+      "愛我家老婆"
     elsif rec_word.include?('是不是')  
       "你是呀"
     elsif rec_word.include?('會不會')
