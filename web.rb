@@ -11,8 +11,12 @@ end
 def det_key_word(rec_word)
   
   case rec_word
+  when "你好" || "嗨" || "哈囉"
+    "你好我是黃肯尼"  
   when "尼尼"
     "老婆~"
+  when "尼尼狗"
+    "小撲豬"  
   when "蛙人"
     "我不是蛙人"
   when "大餅"
@@ -24,6 +28,8 @@ def det_key_word(rec_word)
       "你是呀"
     elsif rec_word.include?('會不會')
       "你變給我看呀"
+    elsif rec_word.include?('会不会')
+      "你變給我看呀"  
     elsif rec_word.include?('像你')
       "像帥吧叭"   
     elsif rec_word.include?('臭')
@@ -31,7 +37,7 @@ def det_key_word(rec_word)
     elsif rec_word.include?('小只')
       "你小只的"     
     else  
-      "你好我是黃肯尼"
+      ""
     end  
   end  
 end  
