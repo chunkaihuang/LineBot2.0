@@ -21,6 +21,8 @@ def det_key_word(rec_word)
     "我不是蛙人"
   when "大餅"
     "我也不是大餅啦"
+  when "淡掉"
+    "赫茲赫茲赫茲"  
   else
     if rec_word.include?('蛙人')
       "誰叫誰蛙人"
