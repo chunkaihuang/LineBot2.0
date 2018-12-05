@@ -2,6 +2,7 @@ require 'sinatra'   # gem 'sinatra'
 require 'line/bot'  # gem 'line-bot-api'
 require 'logger'
 
+set :logger, Logger.new(STDOUT)
 
 def client
   @client ||= Line::Bot::Client.new { |config|
