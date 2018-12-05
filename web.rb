@@ -2,7 +2,6 @@ require 'sinatra'   # gem 'sinatra'
 require 'line/bot'  # gem 'line-bot-api'
 require 'logger'
 
-set :logger, Logger.new(STDOUT)
 
 def client
   @client ||= Line::Bot::Client.new { |config|
@@ -65,8 +64,8 @@ def reply_msg
 
   events.each { |event|
     case event
-    logger.info 'Some message'
     when Line::Bot::Event::Message
+    logger.info 'Some message'  
       case event.type
       when Line::Bot::Event::MessageType::Text
         message = {
