@@ -68,7 +68,7 @@ def reply_msg
         message = {
           type: 'text',
           text: det_key_word(event.message['text'])
-        }
+        } 
         client.reply_message(event['replyToken'], message)
       end
     end
