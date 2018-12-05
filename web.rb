@@ -52,6 +52,7 @@ end
 
 def reply_msg
   body = request.body.read
+  puts body 
 
   signature = request.env['HTTP_X_LINE_SIGNATURE']
   unless client.validate_signature(body, signature)
@@ -65,7 +66,6 @@ def reply_msg
     when Line::Bot::Event::Message
       case event.type
       when Line::Bot::Event::MessageType::Text
-        puts events  
         message = {
           type: 'text',
           text: det_key_word(event.message['text'])
