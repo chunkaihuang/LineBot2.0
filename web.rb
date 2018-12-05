@@ -64,8 +64,7 @@ def reply_msg
     case event
     when Line::Bot::Event::Message
       case event.type
-      when Line::Bot::Event::MessageType::Text
-        puts request.body
+      when Line::Bot::Event::MessageType::Text puts request.body  
         message = {
           type: 'text',
           text: det_key_word(event.message['text'])
