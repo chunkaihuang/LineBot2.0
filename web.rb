@@ -52,7 +52,6 @@ end
 
 def reply_msg
   body = request.body.read
-  puts request.destination
 
   signature = request.env['HTTP_X_LINE_SIGNATURE']
   unless client.validate_signature(body, signature)
@@ -70,6 +69,7 @@ def reply_msg
           type: 'text',
           text: det_key_word(event.message['text'])
         } 
+        puts event['userId']
         client.reply_message(event['replyToken'], message)
       end
     end
