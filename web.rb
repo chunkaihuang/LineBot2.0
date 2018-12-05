@@ -65,7 +65,6 @@ def reply_msg
     when Line::Bot::Event::Message
       case event.type
       when Line::Bot::Event::MessageType::Text
-        events = client.parse_events_from(body)
         puts events  
         message = {
           type: 'text',
