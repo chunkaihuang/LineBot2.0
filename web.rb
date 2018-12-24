@@ -45,6 +45,16 @@ def det_key_word(rec_word)
       "你綴臭"   
     elsif rec_word.include?('小只')
       "你小只的"  
+    elsif rec_word.include?('01')
+      "對"   
+    elsif rec_word.include?('02')
+      "被別人約了兩節"
+    elsif rec_word.include?('03')
+      "約玩直接下班"  
+    elsif rec_word.include?('04')
+      "你不趕快決定5點半有其他人要喔"
+    elsif rec_word.include?('05')
+      "那我就排別人了喔?"
     elsif rec_word.include?('炸雞'||'炸鸡')
       "黃肯尼想吃拿坡里炸雞 呱~"   
     else  
